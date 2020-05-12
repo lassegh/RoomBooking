@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat.startActivity
 import dk.lgr.roombooking.helpers.CommonInstances
 import dk.lgr.roombooking.helpers.LoginHelper
+import dk.lgr.roombooking.repository.getReservationService
 import dk.lgr.roombooking.view.DatePicker
 import dk.lgr.roombooking.view.LoginActivity
 
