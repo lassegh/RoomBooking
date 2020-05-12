@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "919080558975",
+    "firebase_url": "https://appdev-82401.firebaseio.com",
+    "project_id": "appdev-82401",
+    "storage_bucket": "appdev-82401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919080558975:android:c81433682bb40ee9937a4a",
+        "android_client_info": {
+          "package_name": "dk.bracketz.roomregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919080558975-c0sol2q8rrnsq04onosi7t1asfs75at5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dk.bracketz.roomregistration",
+            "certificate_hash": "f6b1220e5f06aed4a718d21affa77d241de1e23d"
+          }
+        },
+        {
+          "client_id": "919080558975-1s40gc74qrhqt2jojpfp650oqb1bsbbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsQ6y5O7EVYy__YKiNTqDVTP6wbfeq998"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919080558975-1s40gc74qrhqt2jojpfp650oqb1bsbbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919080558975:android:a7fa9ff921e56949937a4a",
+        "android_client_info": {
+          "package_name": "dk.lgr.roombooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919080558975-1s40gc74qrhqt2jojpfp650oqb1bsbbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsQ6y5O7EVYy__YKiNTqDVTP6wbfeq998"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919080558975-1s40gc74qrhqt2jojpfp650oqb1bsbbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
