@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import androidx.databinding.BindingAdapter
+import androidx.recyclerview.widget.RecyclerView
 import dk.lgr.roombooking.BR
 import dk.lgr.roombooking.helpers.CommonInstances
 import dk.lgr.roombooking.helpers.LoginHelper
@@ -18,15 +19,21 @@ import dk.lgr.roombooking.repository.getBookingService
 import dk.lgr.roombooking.view.DatePicker
 import dk.lgr.roombooking.view.LoginActivity
 import dk.lgr.roombooking.view.util.toUnix
+import dk.lgr.roombooking.viewmodel.adapter.BookingAdapter
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MainViewModel(context: Context): BaseObservable() {
-
-    val context:Context = context
-    val cInstances = CommonInstances
+class MainViewModel(): BaseObservable() {
+    lateinit var context:Context
+    lateinit var cInstances:CommonInstances
     val loginHelper = LoginHelper()
+
+    constructor(context: Context) : this() {
+        this.context = context
+        cInstances = CommonInstances
+        bookingListFetch()
+    }
 
     @get:Bindable
     var bookingList:List<Booking> = listOf<Booking>()
@@ -79,6 +86,7 @@ class MainViewModel(context: Context): BaseObservable() {
         }
         alertDialog.show()
     }
+
 
     fun refreshRecyclerView(){
         recyclerViewIsRefreshing = true

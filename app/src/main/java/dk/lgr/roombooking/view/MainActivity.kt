@@ -6,7 +6,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import dk.lgr.roombooking.R
 import dk.lgr.roombooking.databinding.ActivityMainBinding
+import dk.lgr.roombooking.databinding.ContentMainBinding
 import dk.lgr.roombooking.viewmodel.MainViewModel
+import dk.lgr.roombooking.viewmodel.adapter.BookingAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,18 +21,6 @@ class MainActivity : AppCompatActivity() {
         // viewmodel sættes
         val mainViewModel = MainViewModel(this)
         mBinding.viewModel = mainViewModel
-
-
-/*
-        val refreshLayout: SwipeRefreshLayout = findViewById(R.id.mainSwiperefresh)
-        refreshLayout.setOnRefreshListener({
-            getAndShowReservations(
-                chosenRoom.getId(),
-                toUnixTime(fromDatePicker.getText().toString()),
-                toUnixTime(toDatePicker.getText().toString())
-            )
-            refreshLayout.setRefreshing(false)
-        })*/
 
     }
 }
