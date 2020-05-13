@@ -33,6 +33,7 @@ class MainViewModel(): BaseObservable() {
         this.context = context
         cInstances = CommonInstances
         bookingListFetch()
+        cInstances.refreshListeners.add { bookingListFetch() }
     }
 
     @get:Bindable
@@ -91,7 +92,6 @@ class MainViewModel(): BaseObservable() {
     fun refreshRecyclerView(){
         recyclerViewIsRefreshing = true
         bookingListFetch()
-        recyclerViewIsRefreshing = false
     }
 
     fun bookingListFetch(){
@@ -105,10 +105,12 @@ class MainViewModel(): BaseObservable() {
                 } else {
                     Toast.makeText(context,"'To Date' cannot be before 'From Date'.", Toast.LENGTH_LONG).show()
                 }
+                recyclerViewIsRefreshing = false
             }
             override fun onFailure(call: Call<List<Booking>>, t: Throwable) {
                 Log.e("AppMy", t.message)
                 Toast.makeText(context,"An error occurred. Try again later", Toast.LENGTH_LONG).show()
+                recyclerViewIsRefreshing = false
             }
         })
     }

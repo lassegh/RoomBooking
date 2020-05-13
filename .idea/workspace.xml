@@ -22,14 +22,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/model/Booking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/model/Booking.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/view/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/view/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/helpers/CommonInstances.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/helpers/CommonInstances.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/viewmodel/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/viewmodel/MainViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/viewmodel/adapter/BindingAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/viewmodel/adapter/BindingAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/viewmodel/adapter/BookingAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dk/lgr/roombooking/viewmodel/adapter/BookingAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/booking_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/booking_row.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

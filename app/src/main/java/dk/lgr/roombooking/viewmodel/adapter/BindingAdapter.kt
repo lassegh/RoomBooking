@@ -1,5 +1,6 @@
 package dk.lgr.roombooking.viewmodel.adapter
 
+import android.app.Activity
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView

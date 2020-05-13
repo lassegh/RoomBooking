@@ -10,10 +10,10 @@ import dk.lgr.roombooking.R
 import dk.lgr.roombooking.databinding.BookingRowBinding
 import dk.lgr.roombooking.model.Booking
 
-class BookingAdapter(context:Context, bookings:List<Booking>?) : RecyclerView.Adapter<BookingAdapter.BindingViewHolder>() {
+class BookingAdapter(context:Context, bookings:List<Booking>) : RecyclerView.Adapter<BookingAdapter.BindingViewHolder>() {
 
     val context = context
-    val bookings:MutableList<Booking> = bookings!!.toMutableList()
+    private val bookings:MutableList<Booking> = bookings.toMutableList()
 
     class BindingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val binding:BookingRowBinding? = DataBindingUtil.bind(itemView)
@@ -25,17 +25,11 @@ class BookingAdapter(context:Context, bookings:List<Booking>?) : RecyclerView.Ad
         return BindingViewHolder(binding.root)
     }
 
-    override fun getItemCount(): Int = bookings!!.count()
+    override fun getItemCount(): Int = bookings.count()
 
     override fun onBindViewHolder(holder: BindingViewHolder, position: Int) {
-        val booking = bookings?.get(position)
+        val booking = bookings.get(position)
         holder.binding?.booking = booking
-        //holder.binding?.setVariable(BR.booking, booking)
     }
 
-    fun refreshList(bookings:List<Booking>?) {
-        this.bookings.removeAll(this.bookings)
-        if (bookings != null) this.bookings.addAll(bookings)
-        notifyDataSetChanged()
-    }
 }
