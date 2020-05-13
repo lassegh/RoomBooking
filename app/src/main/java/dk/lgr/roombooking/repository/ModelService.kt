@@ -1,6 +1,6 @@
 package dk.lgr.roombooking.repository
 
-import dk.lgr.roombooking.model.Reservation
+import dk.lgr.roombooking.model.Booking
 import dk.lgr.roombooking.model.Room
 import retrofit2.Call
 import retrofit2.http.Body
@@ -17,20 +17,20 @@ interface ModelService {
         @Path("ids") ids: Int,
         @Path("fromTime") fromTime: Int,
         @Path("toTime") toTime: Int
-    ): Call<List<Reservation?>?>?
+    ): Call<List<Booking>>
 
     @POST("reservations")
-    fun postReservation(@Body reservation: Reservation?): Call<Int?>?
+    fun postReservation(@Body booking: Booking?): Call<Int>
 
     @GET("reservations/{id}")
-    fun getOneReservation(id: Int): Call<Reservation?>?
+    fun getOneReservation(id: Int): Call<Booking>
 
     @DELETE("reservations/{id}")
-    fun deleteReservation(@Path("id") id: Int): Call<Void?>?
+    fun deleteReservation(@Path("id") id: Int): Call<Void>
 
     @GET("rooms")
-    fun getAllRooms(): Call<List<Room?>?>?
+    fun getAllRooms(): Call<List<Room>>
 
     @GET("rooms/free/{fromTime}")
-    fun getAvailableRooms(@Path("fromTime") fromTime: Int): Call<List<Room?>?>?
+    fun getAvailableRooms(@Path("fromTime") fromTime: Int): Call<List<Room>>
 }

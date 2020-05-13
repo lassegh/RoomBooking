@@ -1,12 +1,10 @@
-package dk.lgr.roombooking
+package dk.lgr.roombooking.view
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModel
-import com.google.android.material.snackbar.Snackbar
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import dk.lgr.roombooking.R
 import dk.lgr.roombooking.databinding.ActivityMainBinding
 import dk.lgr.roombooking.viewmodel.MainViewModel
 
@@ -21,6 +19,18 @@ class MainActivity : AppCompatActivity() {
         // viewmodel sættes
         val mainViewModel = MainViewModel(this)
         mBinding.viewModel = mainViewModel
+
+
+/*
+        val refreshLayout: SwipeRefreshLayout = findViewById(R.id.mainSwiperefresh)
+        refreshLayout.setOnRefreshListener({
+            getAndShowReservations(
+                chosenRoom.getId(),
+                toUnixTime(fromDatePicker.getText().toString()),
+                toUnixTime(toDatePicker.getText().toString())
+            )
+            refreshLayout.setRefreshing(false)
+        })*/
 
     }
 }

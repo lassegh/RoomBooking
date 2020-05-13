@@ -3,14 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <!-- Converter klasser kan importeres og bruges - så lang tid metoderne er statiske
-         <import type="namespace på klassen"/>
-          metoderne kan kaldes direkte i en binding
-
-           funktioner kan kaldes i bindingen fx en funktion, der returnerer bool kan bruges således:
-           @{funktion() ? hvis true : hvis false}
-
-            obs kun strings kan vises i et tekstfelt, hvorfor typer skal konverteres -->
         <variable
             name="viewModel"
             type="dk.lgr.roombooking.viewmodel.MainViewModel" />

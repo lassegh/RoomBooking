@@ -4,7 +4,7 @@ import android.icu.util.Calendar
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import androidx.databinding.BindingAdapter
-import dk.lgr.roombooking.view.toDate
+import dk.lgr.roombooking.view.util.toDate
 import dk.lgr.roombooking.BR
 
 object CommonInstances : BaseObservable() {

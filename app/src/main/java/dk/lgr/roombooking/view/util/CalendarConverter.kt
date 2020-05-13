@@ -1,4 +1,4 @@
-package dk.lgr.roombooking.view
+package dk.lgr.roombooking.view.util
 
 import android.icu.text.SimpleDateFormat
 import android.icu.util.Calendar
