@@ -1,6 +1,7 @@
 package dk.lgr.roombooking.view
 
 import android.os.Bundle
+import android.text.TextUtils.split
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -23,4 +24,6 @@ class MainActivity : AppCompatActivity() {
         mBinding.viewModel = mainViewModel
 
     }
+
+
 }
